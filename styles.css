@@ -27,7 +27,7 @@
   --gradient-subtle: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(254, 202, 87, 0.1), rgba(255, 159, 243, 0.1));
 
   /* Spacing */
-  --section-padding: clamp(64px, 10vh, 120px);
+  --section-padding: clamp(48px, 8vh, 96px);
   --container-width: 1200px;
   --container-padding: clamp(20px, 5vw, 60px);
 
@@ -165,7 +165,7 @@ ul {
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 20px 0;
+  padding: 40px 0;
   transition: var(--transition);
 }
 
@@ -266,11 +266,12 @@ ul {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--section-padding) var(--container-padding);
+  padding: calc(var(--section-padding) + 80px) var(--container-padding)
+    var(--section-padding);
   position: relative;
 }
 
@@ -278,6 +279,7 @@ ul {
   max-width: var(--container-width);
   margin: 0 auto;
   width: 100%;
+  margin-top: 24px;
 }
 
 .hero-badge {
@@ -309,16 +311,16 @@ ul {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 10vw, 6.5rem);
+  font-size: clamp(2.6rem, 8vw, 6rem);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.12;
   letter-spacing: -0.025em;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
 
 .title-line {
   display: block;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .title-line .word {
@@ -341,10 +343,15 @@ ul {
 }
 
 .title-line.accent {
+  color: inherit;
+}
+
+.title-line.accent .word {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: transparent;
 }
 
 .cursor {
@@ -361,9 +368,9 @@ ul {
 .hero-description {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   color: var(--text-secondary);
-  max-width: 720px;
-  line-height: 1.7;
-  margin-bottom: 40px;
+  max-width: 820px;
+  line-height: 1.6;
+  margin-bottom: 26px;
   animation: fadeInUp 0.8s ease 0.5s forwards;
   opacity: 0;
 }
@@ -495,7 +502,7 @@ ul {
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: var(--container-padding);
   display: flex;
   flex-direction: column;
