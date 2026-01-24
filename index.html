@@ -9,156 +9,286 @@
       content="Community programs lead at JetBrains. Partnerships, creator programs, and community-led growth."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <p class="disclaimer">
-          Heads up! I’m just testing AI and coding agents for fun. This page is
-          chaotic and very much not ready.
-        </p>
-        <div class="divider" aria-hidden="true"></div>
-        <p class="eyebrow">Hey, I am</p>
-        <h1>Marina Sergienko</h1>
-        <p class="subtitle">
-          At JetBrains, I drive Community Programs that help developers and
-          community leaders do their best work (and discover great tools along
-          the way).
-        </p>
-        <div class="hero-actions">
-          <a class="button" href="#contact">Say hi</a>
-          <a class="button secondary" href="#experience">Experience</a>
-          <button class="theme-toggle" type="button" data-theme-toggle>
-            Dark mode
-          </button>
+    <div class="noise"></div>
+    <div class="gradient-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Work</a>
+          <a href="#contact">Contact</a>
         </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-line">
+            <span class="word">Building</span>
+          </span>
+          <span class="title-line">
+            <span class="word">communities</span>
+          </span>
+          <span class="title-line accent">
+            <span class="word">that</span>
+            <span class="word">thrive</span>
+          </span>
+        </h1>
+        <p class="hero-description">
+          I'm <strong>Marina Sergienko</strong>, Community Programs Lead at JetBrains.
+          I help developers and community leaders do their best work through strategic programs,
+          meaningful partnerships, and a whole lot of heart.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <span>Let's talk</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#experience" class="btn btn-ghost">
+            <span>View my work</span>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
     </header>
 
     <main>
-      <section id="about" class="section">
-        <div class="container">
-          <h2>About</h2>
-          <p>
-            I like bold ideas and creative projects, but I am equally into what
-            makes programs sustainable: clear user journeys, friendly
-            communication, helpful resources, and regular feedback check-ins.
-          </p>
-          <p>
-            Before tech, I worked in events with VIPs, big business conferences,
-            and high-stakes logistics. People were always the center, and that
-            is still my core focus.
-          </p>
+      <section id="about" class="section about-section">
+        <div class="section-header">
+          <h2>About me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Strategic Thinker</h3>
+            <p>I love bold ideas and creative projects, but I'm equally passionate about sustainability: clear user journeys, helpful resources, and regular feedback loops.</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>People-First</h3>
+            <p>Before tech, I worked in events with VIPs and high-stakes logistics. People were always the center—and that's still my core focus today.</p>
+          </div>
+          <div class="about-card glass-card featured">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Community Builder</h3>
+            <p>From launching creator programs from scratch to expanding global partnerships with GitHub, Nx, and beyond—I make developer communities flourish.</p>
+          </div>
         </div>
       </section>
 
-      <section id="experience" class="section section-alt">
-        <div class="container">
+      <section id="experience" class="section experience-section">
+        <div class="section-header">
           <h2>Experience</h2>
-          <div class="role">
-            <h3>Team Lead, Community Programs</h3>
-            <p class="meta">JetBrains · Nov 2024 – Present · Amsterdam</p>
-            <ul>
-              <li>Lead a global team to drive brand awareness and adoption.</li>
-              <li>
-                Launched a Content Creators Program from scratch, from journey
-                design to day-to-day ops.
-              </li>
-              <li>
-                Build strategy, run experiments, and track growth and activation
-                metrics.
-              </li>
-            </ul>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="role-header">
+                <span class="role-date">2024 — Present</span>
+                <span class="role-badge">Current</span>
+              </div>
+              <h3>Team Lead, Community Programs</h3>
+              <p class="role-company">JetBrains · Amsterdam</p>
+              <ul class="role-highlights">
+                <li>Leading a global team driving brand awareness and adoption</li>
+                <li>Launched Content Creators Program from concept to operations</li>
+                <li>Building strategy, running experiments, tracking growth metrics</li>
+              </ul>
+            </div>
           </div>
-          <div class="role">
-            <h3>Program Lead, Community Programs</h3>
-            <p class="meta">JetBrains · Nov 2023 – Nov 2024 · Amsterdam</p>
-            <ul>
-              <li>Owned program performance and results.</li>
-              <li>
-                Expanded DevRecognition and partnered with GitHub, Nx, and other
-                communities.
-              </li>
-              <li>
-                Coordinated cross-team initiatives to ship program updates.
-              </li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="role-header">
+                <span class="role-date">2023 — 2024</span>
+              </div>
+              <h3>Program Lead, Community Programs</h3>
+              <p class="role-company">JetBrains · Amsterdam</p>
+              <ul class="role-highlights">
+                <li>Owned program performance and measurable results</li>
+                <li>Expanded DevRecognition, partnered with GitHub, Nx, and others</li>
+                <li>Coordinated cross-team initiatives to ship updates</li>
+              </ul>
+            </div>
           </div>
-          <div class="role">
-            <h3>Senior Community Program Manager</h3>
-            <p class="meta">JetBrains · Jun 2022 – Nov 2023 · Amsterdam</p>
-            <ul>
-              <li>
-                Improved onboarding, acceptance criteria, and communication
-                flows.
-              </li>
-              <li>
-                Automated program applications to reduce manual work.
-              </li>
-              <li>Mentored and onboarded new teammates.</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="role-header">
+                <span class="role-date">2022 — 2023</span>
+              </div>
+              <h3>Senior Community Program Manager</h3>
+              <p class="role-company">JetBrains · Amsterdam</p>
+              <ul class="role-highlights">
+                <li>Improved onboarding, acceptance criteria, and communication</li>
+                <li>Automated applications to reduce manual work</li>
+                <li>Mentored and onboarded new teammates</li>
+              </ul>
+            </div>
           </div>
-          <div class="role">
-            <h3>Community Program Manager</h3>
-            <p class="meta">JetBrains · Apr 2018 – Jun 2022 · St Petersburg</p>
-            <ul>
-              <li>
-                Built partnerships with local tech communities and educators.
-              </li>
-              <li>
-                Consulted members on programs, offers, and product access.
-              </li>
-              <li>Supported meetups and local community activations.</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="role-header">
+                <span class="role-date">2018 — 2022</span>
+              </div>
+              <h3>Community Program Manager</h3>
+              <p class="role-company">JetBrains · St Petersburg</p>
+              <ul class="role-highlights">
+                <li>Built partnerships with local tech communities and educators</li>
+                <li>Consulted members on programs, offers, and product access</li>
+                <li>Supported meetups and local community activations</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section">
-        <div class="container">
-          <h2>Contact</h2>
-          <p>
-            I am always up for a challenge and a cup of coffee. If you are
-            building community-led growth or share a passion for tech, let's
-            connect!
-          </p>
-          <a
-            class="button contact-button"
-            href="https://www.linkedin.com/in/marinasergienko/"
-            >Connect on LinkedIn</a
-          >
+      <section id="contact" class="section contact-section">
+        <div class="contact-wrapper">
+          <div class="contact-content">
+            <h2 class="contact-title">Let's create<br/>something great</h2>
+            <p class="contact-text">
+              I'm always up for a challenge and a cup of coffee. Building community-led growth
+              or share a passion for tech? Let's connect!
+            </p>
+            <a href="https://www.linkedin.com/in/marinasergienko/" class="btn btn-primary btn-large">
+              <span>Connect on LinkedIn</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+          </div>
+          <div class="contact-decoration">
+            <div class="decoration-circle"></div>
+            <div class="decoration-circle"></div>
+            <div class="decoration-circle"></div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <p>Made with Cursor.</p>
+      <div class="footer-inner">
+        <p class="footer-text">Made with Cursor and Claude Code</p>
+        <p class="footer-year">2026</p>
       </div>
     </footer>
 
     <script>
+      // Theme toggle
       const toggle = document.querySelector("[data-theme-toggle]");
       const storageKey = "theme";
 
       const applyTheme = (theme) => {
-        document.body.dataset.theme = theme;
-        toggle.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+        document.documentElement.dataset.theme = theme;
         toggle.setAttribute("aria-pressed", theme === "dark");
       };
 
       const saved = localStorage.getItem(storageKey);
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       const initial = saved || (prefersDark ? "dark" : "light");
-
       applyTheme(initial);
 
       toggle.addEventListener("click", () => {
-        const next = document.body.dataset.theme === "dark" ? "light" : "dark";
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
         localStorage.setItem(storageKey, next);
         applyTheme(next);
+      });
+
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".glass-card, .section-header, .contact-content").forEach(el => {
+        observer.observe(el);
+      });
+
+      // Smooth scroll for nav links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Parallax effect for gradient orbs
+      document.addEventListener("mousemove", (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        document.querySelectorAll(".gradient-orb").forEach((orb, i) => {
+          const speed = (i + 1) * 20;
+          orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        });
+      });
+
+      // Nav background on scroll
+      const nav = document.querySelector(".nav");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
       });
     </script>
   </body>
