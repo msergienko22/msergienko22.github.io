@@ -27,7 +27,7 @@
   --gradient-subtle: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(254, 202, 87, 0.1), rgba(255, 159, 243, 0.1));
 
   /* Spacing */
-  --section-padding: clamp(80px, 12vh, 140px);
+  --section-padding: clamp(64px, 10vh, 120px);
   --container-width: 1200px;
   --container-padding: clamp(20px, 5vw, 60px);
 
@@ -361,7 +361,7 @@ ul {
 .hero-description {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 720px;
   line-height: 1.7;
   margin-bottom: 40px;
   animation: fadeInUp 0.8s ease 0.5s forwards;
@@ -639,6 +639,25 @@ ul {
   border-color: rgba(255, 107, 107, 0.2);
 }
 
+/* Outside of work */
+.outside-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.outside-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.outside-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
 /* Timeline */
 .timeline {
   position: relative;
@@ -856,6 +875,10 @@ ul {
 /* Responsive */
 @media (max-width: 1024px) {
   .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outside-grid {
     grid-template-columns: 1fr;
   }
 
