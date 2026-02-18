@@ -185,6 +185,12 @@ ul {
   justify-content: space-between;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .logo {
   font-family: var(--font-display);
   font-size: 1.75rem;
@@ -229,6 +235,30 @@ ul {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.github-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  color: var(--text);
+}
+
+.github-link:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Theme Toggle */
